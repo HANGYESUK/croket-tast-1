@@ -1,11 +1,11 @@
 import {ReactNode, useMemo} from "react";
 
-type useMakeVaneModuleType = {
+type MakeVaneParameterType = {
     count: number;
     vaneAtom?: ReactNode;
     bg?: ReactNode;
 }
-const useMakeVaneModule = ({count, vaneAtom = '🌟', bg = '🌌'}: useMakeVaneModuleType ) => {
+const useMakeVaneModule = ({count, vaneAtom = '🌟', bg = '🌌'}: MakeVaneParameterType ) => {
 
     const addVaneAtom = (num:number, xLineArr: ReactNode[]) => {
         for(let i=0; i<num; i++) {

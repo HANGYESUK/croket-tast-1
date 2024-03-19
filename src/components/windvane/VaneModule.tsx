@@ -2,14 +2,14 @@ import React, {ReactNode} from "react";
 import useMakeVaneModule from "../../hooks/useMakeVaneModule";
 import VaneAtom from "./VaneAtom";
 
-interface WindVaneProps {
+interface VaneModuleProps {
     count: number;
     vaneAtom?: ReactNode;
     bg?: ReactNode;
     rotate?: number;
 }
 
-const VaneModule = React.memo(({ count, vaneAtom= '🌟', bg='🌌', rotate = 0 }: WindVaneProps) => {
+const VaneModule = React.memo(({ count, vaneAtom= '🌟', bg='🌌', rotate = 0 }: VaneModuleProps) => {
 
     const { vaneModule } = useMakeVaneModule({
             count: count,
