@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import CroketPage from "./windvane/CroketPage";
+import WindVanePage from "./page/windvane";
 
 function App() {
   return (
     <div className="App">
-      <CroketPage />
+        <WindVanePage/>
     </div>
   );
 }
